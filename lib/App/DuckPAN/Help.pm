@@ -4,6 +4,6 @@ package App::DuckPAN::Help;
 use Moo;
 use Pod::Usage;
 
-sub help { pod2usage(verbose => 2); }
+sub help { pod2usage(verbose => 2, -noperldoc => 1); }
 
 1;
